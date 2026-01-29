@@ -8,10 +8,10 @@ provider "aws" {
 
 terraform {
   backend "s3" {
-    bucket         = "terraform-bucket-jonathan"
-    key            = "workspace.statefile"
-    region         = "us-east-1"
-    dynamodb_table = "terraform-lock"
+    bucket = "terraform-bucket-jonathan"
+    key    = "workspace.statefile"
+    region = "us-east-1"
+    # dynamodb_table = "terraform-lock"
   }
 }
 
